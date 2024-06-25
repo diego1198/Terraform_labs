@@ -13,3 +13,8 @@ variable "tags" {
   description = "Tags of resources"
   type        = map(string)
 }
+
+variable "inbound_cidr" {
+  description = "list of ips allow to inbound traffic"
+  type        = list(string)
+}
